@@ -25,6 +25,8 @@ As credenciais do projeto ficam no web-app **aulas-cofre** do Site no Ar, não n
 As sessões do projeto são agrupadas pela tag `aulas-1p`:
 
 - **Coordenador** (`aulas-1p:coordenador`): conversa com o usuário e delega tarefas.
-- **Funcionário** (`aulas-1p:funcionario`, `session_01AAY81yX8CZL3BtxuTFuK9Y`): executa as tarefas
-  delegadas no branch `claude/aulas-1p-funcionario` e reporta ao coordenador com `send_message`.
-  Não abre PRs nem mexe no Site no Ar ou em secrets sem pedido explícito.
+- **Funcionários** (`aulas-1p:funcionario`): executam as tarefas delegadas, cada um no seu branch, e
+  reportam ao coordenador com `send_message`. Não abrem PRs nem mexem no Site no Ar ou em secrets
+  sem pedido explícito.
+  - Funcionário 1: `session_01AAY81yX8CZL3BtxuTFuK9Y`, branch `claude/aulas-1p-funcionario`.
+  - Funcionário 2: `session_01RcbJy1Y8R7owirYv5bJFyy`, branch `claude/aulas-1p-funcionario-2`.
